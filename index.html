@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Kind Kiddo - Baby &amp; Kids Store, Malaysia &amp; Singapore</title>
+<meta name="description" content="Happy Kind Kiddo - the mommies and kiddos store that gives back. Shop our official stores on Lazada and Shopee in Malaysia and Singapore.">
+<link rel="icon" type="image/png" href="assets/logo-kiddo-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dimbo&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#17B0AB; --teal-deep:#2E827E; --teal-soft:#59C5C7;
+  --orange:#EF4623; --orange-soft:#F58466;
+  --lime:#8DC63F; --lime-soft:#B7DA9B;
+  --yellow:#FFD65C; --cream:#FFFBCC; --peach:#FEDCC6;
+  --ink:#3A2E28; --muted:#7C6A5E; --paper:#FFFDF6;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:Nunito,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px;line-height:1.6;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto}
+a{color:var(--teal-deep);text-decoration:none}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+@media(min-width:900px){.wrap{max-width:1060px}}
+h1,h2,h3,.display{font-family:Dimbo,Nunito,sans-serif;font-weight:400;line-height:1.1;letter-spacing:.01em}
+h1{font-size:clamp(44px,10vw,84px)}
+h2{font-size:clamp(34px,7vw,54px)}
+.dimbo{font-family:Dimbo,Nunito,sans-serif}
+
+/* floating brand blobs */
+.blobs{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.blob{position:absolute;border-radius:50%;opacity:.35;filter:blur(2px);
+  animation:drift 14s ease-in-out infinite alternate}
+.blob.b1{width:130px;height:130px;background:var(--yellow);top:8%;left:-40px}
+.blob.b2{width:90px;height:90px;background:var(--peach);top:32%;right:-30px;animation-delay:-4s}
+.blob.b3{width:70px;height:70px;background:var(--lime-soft);top:58%;left:-20px;animation-delay:-8s}
+.blob.b4{width:110px;height:110px;background:var(--teal-soft);top:78%;right:-45px;animation-delay:-11s}
+@keyframes drift{from{transform:translateY(-14px) rotate(-4deg)}to{transform:translateY(16px) rotate(6deg)}}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(255,253,246,.9);
+  backdrop-filter:blur(10px);border-bottom:2px solid var(--cream)}
+header .wrap{display:flex;align-items:center;gap:10px;height:60px}
+.logo-mini{width:38px;height:38px;border-radius:12px}
+.wordmark{font-family:Dimbo,Nunito,sans-serif;font-size:26px;color:var(--ink);letter-spacing:.02em}
+.wordmark em{font-style:normal;color:var(--orange)}
+header .give{margin-left:auto;background:var(--lime);color:#fff;font-weight:900;font-size:13.5px;
+  padding:8px 16px;border-radius:999px;box-shadow:0 4px 0 #6da327}
+header .give:active{transform:translateY(2px);box-shadow:0 2px 0 #6da327}
+
+main{position:relative;z-index:1}
+
+/* hero */
+.hero{padding:40px 0 26px;text-align:center}
+.hero-logo{width:min(64vw,320px);margin:0 auto;display:block;
+  animation:bob 5s ease-in-out infinite;filter:drop-shadow(0 18px 26px rgba(239,70,35,.18))}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-12px) rotate(1.5deg)}}
+.hero .kicker{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:900;
+  font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:6px 16px;border-radius:999px;
+  transform:rotate(-2deg);margin-bottom:14px}
+.hero p.sub{color:var(--muted);max-width:420px;margin:16px auto 24px;font-size:17.5px}
+.hero .squiggle{display:block;margin:6px auto 0;width:190px}
+
+/* region toggle */
+.region{position:sticky;top:60px;z-index:30;padding:10px 0 14px;
+  background:linear-gradient(rgba(255,253,246,.96),rgba(255,253,246,.82));backdrop-filter:blur(8px)}
+.toggle{position:relative;display:grid;grid-template-columns:1fr 1fr;background:var(--cream);
+  border-radius:999px;padding:6px;max-width:420px;margin:0 auto;border:2px solid #F2E8A8}
+.toggle .thumb{position:absolute;top:6px;bottom:6px;left:6px;width:calc(50% - 6px);
+  background:var(--teal);border-radius:999px;transition:transform .32s cubic-bezier(.6,1.6,.4,1);
+  box-shadow:0 6px 14px rgba(23,176,171,.35)}
+.toggle.sg .thumb{transform:translateX(100%);background:var(--orange);box-shadow:0 6px 14px rgba(239,70,35,.35)}
+.toggle button{position:relative;z-index:1;background:none;border:0;cursor:pointer;
+  font-family:Nunito;font-weight:900;font-size:16px;color:var(--ink);padding:12px 0;border-radius:999px;
+  display:flex;align-items:center;justify-content:center;gap:8px;transition:color .25s}
+.toggle button img{width:22px;height:auto;border-radius:4px}
+.toggle button.on{color:#fff}
+
+/* store cards */
+.stores{padding:18px 0 8px}
+.panel{display:none}
+.panel.show{display:block;animation:fadeUp .38s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.store{display:flex;align-items:center;gap:16px;background:#fff;border:3px solid var(--cream);
+  border-radius:22px;padding:18px 20px;margin-bottom:14px;color:var(--ink);
+  box-shadow:0 6px 0 rgba(58,46,40,.06);transition:transform .15s, box-shadow .15s}
+.store:active{transform:scale(.98)}
+.store .ic{flex:0 0 52px;width:52px;height:52px;border-radius:16px;display:flex;align-items:center;
+  justify-content:center;font-family:Dimbo;font-size:24px;color:#fff}
+.store .t b{display:block;font-size:18px;font-weight:900}
+.store .t span{color:var(--muted);font-size:14px}
+.store .go{margin-left:auto;font-weight:900;color:var(--faint,#B9A18F);font-size:22px}
+.store.official .ic{background:var(--orange)}
+.store.lazada .ic{background:var(--teal)}
+.store.shopee .ic{background:var(--orange-soft)}
+.note-line{text-align:center;color:var(--muted);font-size:14px;margin:4px 0 0}
+
+/* socials */
+.socials{padding:34px 0 10px}
+.socgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:480px;margin:18px auto 0}
+.soc{display:flex;flex-direction:column;align-items:center;gap:8px;background:#fff;
+  border:3px solid var(--cream);border-radius:18px;padding:16px 6px;color:var(--ink);
+  font-weight:800;font-size:12.5px;transition:transform .15s}
+.soc:active{transform:scale(.94)}
+.soc .si{width:44px;height:44px;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.soc svg{width:22px;height:22px;fill:#fff}
+.soc.fb .si{background:#1877F2}.soc.ig .si{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF)}
+.soc.tt .si{background:#111}.soc.wa .si{background:#25D366}
+
+/* story */
+.story{padding:44px 0}
+.story .card{background:var(--teal);border-radius:28px;padding:34px 26px;color:#EAF9F8;
+  position:relative;overflow:hidden}
+.story .card::after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;
+  background:rgba(255,255,255,.10);right:-60px;top:-60px}
+.story h2{color:#fff;margin-bottom:14px}
+.story p{margin-bottom:14px;position:relative;z-index:1}
+.story .sig{font-family:Dimbo;font-size:30px;color:var(--yellow);transform:rotate(-2deg);display:inline-block}
+
+/* giving band */
+.giving{padding:10px 0 44px}
+.give-card{display:block;background:linear-gradient(120deg,var(--orange),var(--orange-soft));
+  border-radius:28px;padding:30px 26px;color:#fff;text-align:center;position:relative;overflow:hidden}
+.give-card h2{color:#fff}
+.give-card p{color:#FFE3D8;max-width:440px;margin:10px auto 18px}
+.give-card .cta{display:inline-block;background:#fff;color:var(--orange);font-weight:900;
+  padding:13px 28px;border-radius:999px;box-shadow:0 5px 0 rgba(0,0,0,.12)}
+.give-card .cta:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.12)}
+
+/* footer */
+footer{border-top:3px solid var(--cream);padding:30px 0 90px;text-align:center;color:var(--muted);font-size:14px}
+footer img{width:44px;border-radius:12px;margin-bottom:8px}
+
+/* floating whatsapp */
+.wafloat{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:60;
+  width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;
+  justify-content:center;box-shadow:0 10px 22px rgba(37,211,102,.45);transition:transform .15s}
+.wafloat:active{transform:scale(.9)}
+.wafloat svg{width:30px;height:30px;fill:#fff}
+
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .5s ease, transform .5s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+@media(min-width:900px){
+  .hero{padding:64px 0 34px}
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+  .story .card,.give-card{padding:48px 44px}
+}
+</style>
+</head>
+<body>
+
+<div class="blobs" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span>
+  <span class="blob b3"></span><span class="blob b4"></span>
+</div>
+
+<header>
+  <div class="wrap">
+    <img class="logo-mini" src="assets/logo-kiddo-192.png" alt="">
+    <span class="wordmark">happy kind <em>kiddo</em></span>
+    <a class="give" href="https://happykind.co">We Give Back</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <img class="hero-logo" src="assets/logo-kiddo.png" alt="Happy Kind Kiddo - ghost and baby logo">
+      <span class="kicker">Baby &amp; Kids Store</span>
+      <h1>Happy buys,<br>kind hearts.</h1>
+      <svg class="squiggle" viewBox="0 0 190 14" aria-hidden="true"><path d="M2 8 Q 14 2, 26 8 T 50 8 T 74 8 T 98 8 T 122 8 T 146 8 T 170 8 T 188 8" fill="none" stroke="#EF4623" stroke-width="5" stroke-linecap="round"/></svg>
+      <p class="sub">The mommies and kiddos store in Malaysia &amp; Singapore. We sell to make a living &mdash; and we make a difference by Doing Good.</p>
+    </div>
+  </section>
+
+  <div class="region">
+    <div class="wrap">
+      <div class="toggle" id="toggle" role="tablist" aria-label="Choose your region">
+        <span class="thumb" aria-hidden="true"></span>
+        <button id="btn-my" role="tab" aria-selected="true" class="on" onclick="setRegion('my')">
+          <img src="assets/malaysia_640.png" alt="">Malaysia
+        </button>
+        <button id="btn-sg" role="tab" aria-selected="false" onclick="setRegion('sg')">
+          <img src="assets/singapore_640.png" alt="">Singapore
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="stores">
+    <div class="wrap">
+      <div class="panel show" id="panel-my">
+        <a class="store official rv" href="https://happykindkiddo.my">
+          <span class="ic">HK</span>
+          <span class="t"><b>Official Store</b><span>happykindkiddo.my - full range, best prices</span></span>
+          <span class="go">&rsaquo;</span>
+        </a>
+        <a class="store lazada rv" href="https://www.lazada.com.my/happy-kind-kiddo">
+          <span class="ic">Lz</span>
+          <span class="t"><b>Lazada Malaysia</b><span>vouchers &amp; free shipping deals</span></span>
+          <span class="go">&rsaquo;</span>
+        </a>
+        <a class="store shopee rv" href="https://shopee.com.my/hihappykind">
+          <span class="ic">Sp</span>
+          <span class="t"><b>Shopee Malaysia</b><span>flash sales &amp; coins cashback</span></span>
+          <span class="go">&rsaquo;</span>
+        </a>
+        <p class="note-line">Ships within Malaysia</p>
+      </div>
+      <div class="panel" id="panel-sg">
+        <a class="store official rv" href="https://happykindkiddo.sg">
+          <span class="ic">HK</span>
+          <span class="t"><b>Official Store</b><span>happykindkiddo.sg - full range, best prices</span></span>
+          <span class="go">&rsaquo;</span>
+        </a>
+        <a class="store lazada rv" href="https://lazada.sg/happy-kind-kiddo">
+          <span class="ic">Lz</span>
+          <span class="t"><b>Lazada Singapore</b><span>vouchers &amp; free shipping deals</span></span>
+          <span class="go">&rsaquo;</span>
+        </a>
+        <a class="store shopee rv" href="https://shopee.sg/happykindsg">
+          <span class="ic">Sp</span>
+          <span class="t"><b>Shopee Singapore</b><span>flash sales &amp; coins cashback</span></span>
+          <span class="go">&rsaquo;</span>
+        </a>
+        <p class="note-line">Ships within Singapore</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="socials">
+    <div class="wrap">
+      <h2 class="dimbo" style="text-align:center">Say hi to us</h2>
+      <div class="panel show" id="soc-my">
+        <div class="socgrid">
+          <a class="soc fb rv" href="https://facebook.com/hihappykind"><span class="si"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8z"/></svg></span>Facebook</a>
+          <a class="soc ig rv" href="https://instagram.com/hihappykind"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 8.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8zm0-2.1a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6zm6.8-.3a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0zM12 4.2c-2.5 0-2.8 0-3.8.1-2.6.1-3.9 1.4-4 4-.1 1-.1 1.3-.1 3.7s0 2.8.1 3.8c.1 2.6 1.4 3.9 4 4 1 .1 1.3.1 3.8.1s2.8 0 3.8-.1c2.6-.1 3.9-1.4 4-4 .1-1 .1-1.3.1-3.8s0-2.8-.1-3.8c-.1-2.6-1.4-3.9-4-4-1-.1-1.3-.1-3.8-.1z"/></svg></span>Instagram</a>
+          <a class="soc tt rv" href="https://tiktok.com/@hihappykind"><span class="si"><svg viewBox="0 0 24 24"><path d="M16.6 3c.4 2 1.8 3.4 3.9 3.6v3c-1.5 0-2.8-.5-3.9-1.3v6.2c0 3.6-2.6 6-6 6-3.3 0-5.9-2.4-5.9-5.7 0-3.5 3-5.9 6.7-5.5v3.1c-1.9-.4-3.6.7-3.6 2.4 0 1.5 1.2 2.6 2.7 2.6 1.7 0 2.9-1.2 2.9-3.1V3h3.2z"/></svg></span>TikTok</a>
+          <a class="soc wa rv" href="https://wa.me/601164364278"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.4 12.6c-.2.5-1.1 1-1.5 1.1-.4 0-.9.2-3-.6-2.5-1-4.1-3.6-4.2-3.8-.1-.2-1-1.3-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.2.6.4 0 .1 0 .7-.3 1.2z"/></svg></span>WhatsApp</a>
+        </div>
+      </div>
+      <div class="panel" id="soc-sg">
+        <div class="socgrid">
+          <a class="soc fb rv" href="https://facebook.com/happykindsg"><span class="si"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8z"/></svg></span>Facebook</a>
+          <a class="soc ig rv" href="https://instagram.com/happykindsg"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 8.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8zm0-2.1a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6zm6.8-.3a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0zM12 4.2c-2.5 0-2.8 0-3.8.1-2.6.1-3.9 1.4-4 4-.1 1-.1 1.3-.1 3.7s0 2.8.1 3.8c.1 2.6 1.4 3.9 4 4 1 .1 1.3.1 3.8.1s2.8 0 3.8-.1c2.6-.1 3.9-1.4 4-4 .1-1 .1-1.3.1-3.8s0-2.8-.1-3.8c-.1-2.6-1.4-3.9-4-4-1-.1-1.3-.1-3.8-.1z"/></svg></span>Instagram</a>
+          <a class="soc tt rv" href="https://tiktok.com/@happykindsg"><span class="si"><svg viewBox="0 0 24 24"><path d="M16.6 3c.4 2 1.8 3.4 3.9 3.6v3c-1.5 0-2.8-.5-3.9-1.3v6.2c0 3.6-2.6 6-6 6-3.3 0-5.9-2.4-5.9-5.7 0-3.5 3-5.9 6.7-5.5v3.1c-1.9-.4-3.6.7-3.6 2.4 0 1.5 1.2 2.6 2.7 2.6 1.7 0 2.9-1.2 2.9-3.1V3h3.2z"/></svg></span>TikTok</a>
+          <a class="soc wa rv" href="https://wa.me/6587812581"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.4 12.6c-.2.5-1.1 1-1.5 1.1-.4 0-.9.2-3-.6-2.5-1-4.1-3.6-4.2-3.8-.1-.2-1-1.3-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.2.6.4 0 .1 0 .7-.3 1.2z"/></svg></span>WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="wrap">
+      <div class="card rv">
+        <h2>Our story</h2>
+        <p>The idea of Happy Kind was conceived when Joey bought a painting for her son, with a caption saying &ldquo;fill the world with kindness&rdquo;.</p>
+        <p>In this modern world, kindness has taken a backseat to self-interest in fueling happiness. At Happy Kind, we firmly believe that Happiness and Kindness should go hand in hand in making the world a better place.</p>
+        <p>So who we are? We are no different than the other mommies and kiddos&rsquo; stores, we sell to make a living. Just that, we make a difference by Doing Good.</p>
+        <span class="sig">stay kind, stay happy</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="giving">
+    <div class="wrap">
+      <a class="give-card rv" href="https://happykind.co">
+        <h2>1% of every sale<br>goes to Doing Good</h2>
+        <p>Every order feeds our transparent, on-chain donation pool at Happy Kind Giving. See exactly where the kindness goes.</p>
+        <span class="cta">Visit Happy Kind Giving</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo-kiddo-192.png" alt="">
+    <div class="dimbo" style="font-size:24px;color:var(--ink)">happy kind <span style="color:var(--orange)">kiddo</span></div>
+    <p>&copy; 2019 Happy Kind &nbsp;|&nbsp; All Rights Reserved<br>Malaysia &middot; Singapore</p>
+  </div>
+</footer>
+
+<a class="wafloat" id="wafloat" href="https://wa.me/601164364278" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.4 12.6c-.2.5-1.1 1-1.5 1.1-.4 0-.9.2-3-.6-2.5-1-4.1-3.6-4.2-3.8-.1-.2-1-1.3-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.2.6.4 0 .1 0 .7-.3 1.2z"/></svg>
+</a>
+
+<script>
+(function(){
+  var WA = { my: "https://wa.me/601164364278", sg: "https://wa.me/6587812581" };
+  var toggle = document.getElementById("toggle");
+  var btnMy = document.getElementById("btn-my");
+  var btnSg = document.getElementById("btn-sg");
+
+  window.setRegion = function(r){
+    toggle.classList.toggle("sg", r === "sg");
+    btnMy.classList.toggle("on", r === "my");
+    btnSg.classList.toggle("on", r === "sg");
+    btnMy.setAttribute("aria-selected", r === "my");
+    btnSg.setAttribute("aria-selected", r === "sg");
+    ["panel-", "soc-"].forEach(function(pref){
+      document.getElementById(pref + "my").classList.toggle("show", r === "my");
+      document.getElementById(pref + "sg").classList.toggle("show", r === "sg");
+    });
+    document.getElementById("wafloat").href = WA[r];
+    try { localStorage.setItem("hkk-region", r); } catch(e){}
+  };
+
+  var saved = null;
+  try { saved = localStorage.getItem("hkk-region"); } catch(e){}
+  if (saved === "sg" || saved === "my") setRegion(saved);
+
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduced && "IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll(".rv").forEach(function(el){ el.classList.add("in"); });
+  }
+})();
+</script>
+</body>
+</html>
