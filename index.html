@@ -23,7 +23,7 @@
   "name": "Happy Kind Kiddo",
   "url": "https://happykindkiddo.com",
   "logo": "https://happykindkiddo.com/assets/logo-kiddo.png",
-  "description": "Baby and kids store serving Malaysia and Singapore. We sell to make a living, and make a difference by Doing Good - 1% of every sale goes to the Happy Kind Giving donation pool.",
+  "description": "Baby and kids store serving Malaysia and Singapore. We sell to make a living, and make a difference by Doing Good: 1% of every order on our official store goes to Happy Kind Giving.",
   "parentOrganization": {"@type": "Organization", "name": "Happy Kind", "url": "https://happykind.co"},
   "areaServed": ["MY", "SG"],
   "sameAs": [
@@ -35,10 +35,7 @@
     "https://shopee.sg/happykindsg",
     "https://facebook.com/hihappykind",
     "https://instagram.com/hihappykind",
-    "https://tiktok.com/@hihappykind",
-    "https://facebook.com/happykindsg",
-    "https://instagram.com/happykindsg",
-    "https://tiktok.com/@happykindsg"
+    "https://tiktok.com/@hihappykind"
   ]
 }
 </script>
@@ -104,6 +101,11 @@ main{position:relative;z-index:1}
   transform:rotate(-2deg);margin-bottom:14px}
 .hero p.sub{color:var(--muted);max-width:420px;margin:16px auto 24px;font-size:17.5px}
 .hero .squiggle{display:block;margin:6px auto 0;width:190px}
+.hero p.tag{font-family:Dimbo,Nunito,sans-serif;font-size:24px;color:var(--teal-deep);margin:-10px 0 22px}
+.hero .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hero .btns a{background:var(--orange);color:#fff;font-weight:900;padding:13px 26px;border-radius:999px;box-shadow:0 5px 0 rgba(0,0,0,.12)}
+.hero .btns a.alt{background:#fff;color:var(--orange)}
+.hero .btns a:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.12)}
 
 /* region toggle */
 .region{position:sticky;top:60px;z-index:30;padding:10px 0 14px;
@@ -141,9 +143,9 @@ main{position:relative;z-index:1}
 
 /* socials */
 .socials{padding:34px 0 10px}
-.socgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:480px;margin:18px auto 0}
-.soc{display:flex;flex-direction:column;align-items:center;gap:8px;background:#fff;
-  border:3px solid var(--cream);border-radius:18px;padding:16px 6px;color:var(--ink);
+.socgrid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:620px;margin:18px auto 0}
+.soc{flex:0 0 100px;display:flex;flex-direction:column;align-items:center;gap:8px;background:#fff;
+  border:3px solid var(--cream);border-radius:18px;padding:16px 2px;color:var(--ink);
   font-weight:800;font-size:12.5px;transition:transform .15s}
 .soc:active{transform:scale(.94)}
 .soc .si{width:44px;height:44px;border-radius:14px;display:flex;align-items:center;justify-content:center}
@@ -208,7 +210,7 @@ footer img{width:44px;border-radius:12px;margin-bottom:8px}
   <div class="wrap">
     <img class="logo-mini" src="assets/logo-kiddo-192.png" alt="">
     <span class="wordmark">happy kind <em>kiddo</em></span>
-    <a class="give" href="https://happykind.co">We Give Back</a>
+    <a class="give" href="https://happykind.co/#giving">We Give Back</a>
   </div>
 </header>
 
@@ -216,10 +218,12 @@ footer img{width:44px;border-radius:12px;margin-bottom:8px}
   <section class="hero">
     <div class="wrap">
       <img class="hero-logo" src="assets/logo-kiddo.png" alt="Happy Kind Kiddo - ghost and baby logo">
-      <span class="kicker">Baby &amp; Kids Store</span>
-      <h1>Happy buys,<br>kind hearts.</h1>
+      <span class="kicker">Malaysia and Singapore&rsquo;s first BYO Gift Set</span>
+      <h1>The most thoughtful baby gift set</h1>
       <svg class="squiggle" viewBox="0 0 190 14" aria-hidden="true"><path d="M2 8 Q 14 2, 26 8 T 50 8 T 74 8 T 98 8 T 122 8 T 146 8 T 170 8 T 188 8" fill="none" stroke="#EF4623" stroke-width="5" stroke-linecap="round"/></svg>
-      <p class="sub">The mommies and kiddos store in Malaysia &amp; Singapore. We sell to make a living &mdash; and we make a difference by Doing Good.</p>
+      <p class="sub">Everything in the box is something babies use and mommies appreciate. From RM250, with the gift box and a mystery gift included.</p>
+      <p class="tag">Happy buys, kind hearts.</p>
+      <div class="btns"><a id="gift-byo" href="https://happykindkiddo.my/pages/gift-sets#byo">Build your own</a><a class="alt" id="gift-omakase" href="https://happykindkiddo.my/pages/gift-sets#omakase">Let us choose</a></div>
     </div>
   </section>
 
@@ -281,21 +285,12 @@ footer img{width:44px;border-radius:12px;margin-bottom:8px}
   <section class="socials">
     <div class="wrap">
       <h2 class="dimbo" style="text-align:center">Say hi to us</h2>
-      <div class="panel show" id="soc-my">
-        <div class="socgrid">
-          <a class="soc fb rv" href="https://facebook.com/hihappykind"><span class="si"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8z"/></svg></span>Facebook</a>
-          <a class="soc ig rv" href="https://instagram.com/hihappykind"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 8.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8zm0-2.1a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6zm6.8-.3a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0zM12 4.2c-2.5 0-2.8 0-3.8.1-2.6.1-3.9 1.4-4 4-.1 1-.1 1.3-.1 3.7s0 2.8.1 3.8c.1 2.6 1.4 3.9 4 4 1 .1 1.3.1 3.8.1s2.8 0 3.8-.1c2.6-.1 3.9-1.4 4-4 .1-1 .1-1.3.1-3.8s0-2.8-.1-3.8c-.1-2.6-1.4-3.9-4-4-1-.1-1.3-.1-3.8-.1z"/></svg></span>Instagram</a>
-          <a class="soc tt rv" href="https://tiktok.com/@hihappykind"><span class="si"><svg viewBox="0 0 24 24"><path d="M16.6 3c.4 2 1.8 3.4 3.9 3.6v3c-1.5 0-2.8-.5-3.9-1.3v6.2c0 3.6-2.6 6-6 6-3.3 0-5.9-2.4-5.9-5.7 0-3.5 3-5.9 6.7-5.5v3.1c-1.9-.4-3.6.7-3.6 2.4 0 1.5 1.2 2.6 2.7 2.6 1.7 0 2.9-1.2 2.9-3.1V3h3.2z"/></svg></span>TikTok</a>
-          <a class="soc wa rv" href="https://wa.me/601164364278"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.4 12.6c-.2.5-1.1 1-1.5 1.1-.4 0-.9.2-3-.6-2.5-1-4.1-3.6-4.2-3.8-.1-.2-1-1.3-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.2.6.4 0 .1 0 .7-.3 1.2z"/></svg></span>WhatsApp</a>
-        </div>
-      </div>
-      <div class="panel" id="soc-sg">
-        <div class="socgrid">
-          <a class="soc fb rv" href="https://facebook.com/happykindsg"><span class="si"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8z"/></svg></span>Facebook</a>
-          <a class="soc ig rv" href="https://instagram.com/happykindsg"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 8.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8zm0-2.1a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6zm6.8-.3a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0zM12 4.2c-2.5 0-2.8 0-3.8.1-2.6.1-3.9 1.4-4 4-.1 1-.1 1.3-.1 3.7s0 2.8.1 3.8c.1 2.6 1.4 3.9 4 4 1 .1 1.3.1 3.8.1s2.8 0 3.8-.1c2.6-.1 3.9-1.4 4-4 .1-1 .1-1.3.1-3.8s0-2.8-.1-3.8c-.1-2.6-1.4-3.9-4-4-1-.1-1.3-.1-3.8-.1z"/></svg></span>Instagram</a>
-          <a class="soc tt rv" href="https://tiktok.com/@happykindsg"><span class="si"><svg viewBox="0 0 24 24"><path d="M16.6 3c.4 2 1.8 3.4 3.9 3.6v3c-1.5 0-2.8-.5-3.9-1.3v6.2c0 3.6-2.6 6-6 6-3.3 0-5.9-2.4-5.9-5.7 0-3.5 3-5.9 6.7-5.5v3.1c-1.9-.4-3.6.7-3.6 2.4 0 1.5 1.2 2.6 2.7 2.6 1.7 0 2.9-1.2 2.9-3.1V3h3.2z"/></svg></span>TikTok</a>
-          <a class="soc wa rv" href="https://wa.me/6587812581"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.4 12.6c-.2.5-1.1 1-1.5 1.1-.4 0-.9.2-3-.6-2.5-1-4.1-3.6-4.2-3.8-.1-.2-1-1.3-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.2.6.4 0 .1 0 .7-.3 1.2z"/></svg></span>WhatsApp</a>
-        </div>
+      <div class="socgrid">
+        <a class="soc fb rv" href="https://facebook.com/hihappykind"><span class="si"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8z"/></svg></span>Facebook</a>
+        <a class="soc ig rv" href="https://instagram.com/hihappykind"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 8.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8zm0-2.1a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6zm6.8-.3a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0zM12 4.2c-2.5 0-2.8 0-3.8.1-2.6.1-3.9 1.4-4 4-.1 1-.1 1.3-.1 3.7s0 2.8.1 3.8c.1 2.6 1.4 3.9 4 4 1 .1 1.3.1 3.8.1s2.8 0 3.8-.1c2.6-.1 3.9-1.4 4-4 .1-1 .1-1.3.1-3.8s0-2.8-.1-3.8c-.1-2.6-1.4-3.9-4-4-1-.1-1.3-.1-3.8-.1z"/></svg></span>Instagram</a>
+        <a class="soc tt rv" href="https://tiktok.com/@hihappykind"><span class="si"><svg viewBox="0 0 24 24"><path d="M16.6 3c.4 2 1.8 3.4 3.9 3.6v3c-1.5 0-2.8-.5-3.9-1.3v6.2c0 3.6-2.6 6-6 6-3.3 0-5.9-2.4-5.9-5.7 0-3.5 3-5.9 6.7-5.5v3.1c-1.9-.4-3.6.7-3.6 2.4 0 1.5 1.2 2.6 2.7 2.6 1.7 0 2.9-1.2 2.9-3.1V3h3.2z"/></svg></span>TikTok</a>
+        <a class="soc wa rv" href="https://wa.me/601164364278"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.4 12.6c-.2.5-1.1 1-1.5 1.1-.4 0-.9.2-3-.6-2.5-1-4.1-3.6-4.2-3.8-.1-.2-1-1.3-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.2.6.4 0 .1 0 .7-.3 1.2z"/></svg></span>WhatsApp MY</a>
+        <a class="soc wa rv" href="https://wa.me/6587812581"><span class="si"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.4 12.6c-.2.5-1.1 1-1.5 1.1-.4 0-.9.2-3-.6-2.5-1-4.1-3.6-4.2-3.8-.1-.2-1-1.3-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.2.6.4 0 .1 0 .7-.3 1.2z"/></svg></span>WhatsApp SG</a>
       </div>
     </div>
   </section>
@@ -314,9 +309,9 @@ footer img{width:44px;border-radius:12px;margin-bottom:8px}
 
   <section class="giving">
     <div class="wrap">
-      <a class="give-card rv" href="https://happykind.co">
-        <h2>1% of every sale<br>goes to Doing Good</h2>
-        <p>Every order feeds our transparent, on-chain donation pool at Happy Kind Giving. See exactly where the kindness goes.</p>
+      <a class="give-card rv" href="https://happykind.co/#giving">
+        <h2>1% of every order on our<br>official store goes to Happy Kind Giving</h2>
+        <p>Orders on happykindkiddo.my and happykindkiddo.sg fund Happy Kind Giving, held on-chain in happykind.eth. Shopee and Lazada orders are not included. See exactly where the kindness goes.</p>
         <span class="cta">Visit Happy Kind Giving</span>
       </a>
     </div>
@@ -338,6 +333,7 @@ footer img{width:44px;border-radius:12px;margin-bottom:8px}
 <script>
 (function(){
   var WA = { my: "https://wa.me/601164364278", sg: "https://wa.me/6587812581" };
+  var GIFT = { my: "https://happykindkiddo.my/pages/gift-sets", sg: "https://happykindkiddo.sg/pages/gift-sets" };
   var toggle = document.getElementById("toggle");
   var btnMy = document.getElementById("btn-my");
   var btnSg = document.getElementById("btn-sg");
@@ -348,11 +344,13 @@ footer img{width:44px;border-radius:12px;margin-bottom:8px}
     btnSg.classList.toggle("on", r === "sg");
     btnMy.setAttribute("aria-selected", r === "my");
     btnSg.setAttribute("aria-selected", r === "sg");
-    ["panel-", "soc-"].forEach(function(pref){
+    ["panel-"].forEach(function(pref){
       document.getElementById(pref + "my").classList.toggle("show", r === "my");
       document.getElementById(pref + "sg").classList.toggle("show", r === "sg");
     });
     document.getElementById("wafloat").href = WA[r];
+    document.getElementById("gift-byo").href = GIFT[r] + "#byo";
+    document.getElementById("gift-omakase").href = GIFT[r] + "#omakase";
     try { localStorage.setItem("hkk-region", r); } catch(e){}
   };
 
